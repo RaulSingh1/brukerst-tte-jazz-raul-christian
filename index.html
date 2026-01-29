@@ -1,330 +1,80 @@
 <!DOCTYPE html>
-<html lang="no">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Den Ultimate Nettstedet</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+<title>Min Side</title>
+<link rel="stylesheet" href="style.css">
+<style>
+body { background: #654321 !important; min-height: 2000px; }
+h1 { color: blue; font-size: 60px; }
+</style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">✨ DIVINE</div>
-            <ul class="nav-menu">
-                <li><a href="#home">Hjem</a></li>
-                <li><a href="#features">Funksjoner</a></li>
-                <li><a href="#gallery">Galleri</a></li>
-                <li><a href="#contact">Kontakt</a></li>
-            </ul>
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-        </div>
-    </nav>
+<div id="header" style="position:absolute;top:50px;left:200px;">
+<h1>VELKOMMEN TIL MIN NETTSIDE</h1>
+</div>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="gradient-orb orb-1"></div>
-            <div class="gradient-orb orb-2"></div>
-            <div class="gradient-orb orb-3"></div>
-        </div>
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    <span class="title-line">Velkommen til</span>
-                    <span class="title-main">Fremtiden</span>
-                    <span class="title-subtitle">av Web Design</span>
-                </h1>
-                <p class="hero-description">
-                    Opplev det mest spektakulære nettstedet som noen gang har blitt skapt. 
-                    En reise gjennom visuell perfeksjon og teknologisk eksellens.
-                </p>
-                <div class="hero-buttons">
-                    <button class="btn btn-primary">Utforsk Nå</button>
-                    <button class="btn btn-secondary">Lær Mer</button>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="floating-card card-1">
-                    <div class="card-content">
-                        <div class="card-icon">🚀</div>
-                        <h3>Innovasjon</h3>
-                    </div>
-                </div>
-                <div class="floating-card card-2">
-                    <div class="card-content">
-                        <div class="card-icon">✨</div>
-                        <h3>Eleganse</h3>
-                    </div>
-                </div>
-                <div class="floating-card card-3">
-                    <div class="card-content">
-                        <div class="card-icon">💎</div>
-                        <h3>Kvalitet</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
-        </div>
-    </section>
+<div class="content" style="position:absolute;top:300px;right:100px;">
+<p>Dette er min fantastiske nettside</p>
+<p style="color:#CCCCCC;font-size:30px;">HEI DER!</p>
+<p style="font-size:8px;color:black;">liten tekst</p>
+</div>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Funksjoner</span>
-                <h2 class="section-title">Ubegrenset Muligheter</h2>
-                <p class="section-description">
-                    Hver detalj er nøye gjennomtenkt for å skape en opplevelse uten sidestykke
-                </p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                        </svg>
-                    </div>
-                    <h3>Moderne Design</h3>
-                    <p>Skapt med de nyeste designprinsipper og trendene for å levere en visuell opplevelse uten sidestykke.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-                        </svg>
-                    </div>
-                    <h3>Lynrask Ytelse</h3>
-                    <p>Optimalisert for hastighet og effektivitet, gir en sømløs opplevelse på alle enheter.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                            <line x1="8" y1="21" x2="16" y2="21"/>
-                            <line x1="12" y1="17" x2="12" y2="21"/>
-                        </svg>
-                    </div>
-                    <h3>Responsivt</h3>
-                    <p>Perfekt tilpasset alle skjermstørrelser, fra mobil til desktop, for en konsistent opplevelse.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
-                            <line x1="12" y1="22.08" x2="12" y2="12"/>
-                        </svg>
-                    </div>
-                    <h3>Animasjoner</h3>
-                    <p>Smoothe og elegante animasjoner som bringer nettstedet til live og skaper engasjement.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                        </svg>
-                    </div>
-                    <h3>Sikkerhet</h3>
-                    <p>Toppnivå sikkerhet og beskyttelse for å sikre din data og personvern.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <circle cx="12" cy="12" r="10"/>
-                            <path d="M12 6v6l4 2"/>
-                        </svg>
-                    </div>
-                    <h3>24/7 Støtte</h3>
-                    <p>Alltid tilgjengelig støtte for å hjelpe deg når du trenger det mest.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<div style="position:absolute;top:600px;left:50px;">
+<div>
+<div>
+<h2>Om meg</h2>
+</div>
+</div>
+<p>Jeg liker å lage nettsider</p>
+<ul>
+<li style="font-size:40px;">HTML</li>
+<li style="font-size:15px;">CSS</li>
+<li style="font-size:25px;">JavaScript</li>
+<li style="color:red;font-size:20px;">Jeg liker kaker</li>
+</ul>
+</div>
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Galleri</span>
-                <h2 class="section-title">Visuell Perfeksjon</h2>
-                <p class="section-description">
-                    Se på disse spektakulære visuelle elementene
-                </p>
-            </div>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <div class="gallery-image">
-                        <div class="image-placeholder gradient-1"></div>
-                        <div class="gallery-overlay">
-                            <h3>Spektakulært Design</h3>
-                            <p>Visuell eksellens</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-image">
-                        <div class="image-placeholder gradient-2"></div>
-                        <div class="gallery-overlay">
-                            <h3>Moderne Estetikk</h3>
-                            <p>Eleganse i hver detalj</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-image">
-                        <div class="image-placeholder gradient-3"></div>
-                        <div class="gallery-overlay">
-                            <h3>Innovativt</h3>
-                            <p>Fremtiden er nå</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-image">
-                        <div class="image-placeholder gradient-4"></div>
-                        <div class="gallery-overlay">
-                            <h3>Perfeksjon</h3>
-                            <p>Ingen kompromisser</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-image">
-                        <div class="image-placeholder gradient-5"></div>
-                        <div class="gallery-overlay">
-                            <h3>Eksklusivt</h3>
-                            <p>Unik opplevelse</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-image">
-                        <div class="image-placeholder gradient-6"></div>
-                        <div class="gallery-overlay">
-                            <h3>Inspirerende</h3>
-                            <p>Skap noe stort</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<div style="background:black;padding:30px;position:absolute;top:100px;right:400px;">
+<h3 style="font-size:50px;">STOR TEKST</h3>
+</div>
 
-    <!-- Stats Section -->
-    <section class="stats">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-number">1M+</div>
-                    <div class="stat-label">Besøkende</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">50K+</div>
-                    <div class="stat-label">Tilfredse Kunder</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">99%</div>
-                    <div class="stat-label">Oppetid</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">24/7</div>
-                    <div class="stat-label">Støtte</div>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="form-section" style="position:absolute;top:900px;left:300px;">
+<form>
+<input type="text" placeholder="Navn" style="width:250px;height:40px;font-size:18px;position:absolute;top:0;left:0;">
+<input type="email" placeholder="E-post" style="width:300px;height:40px;font-size:18px;position:absolute;top:60px;left:50px;">
+<button type="submit" style="background:red;color:white;padding:15px;font-size:16px;position:absolute;top:120px;left:100px;">Send inn</button>
+<button style="background:blue;padding:10px;font-size:14px;position:absolute;top:120px;left:250px;">KLIKK HER</button>
+</form>
+</div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h2>Kontakt Oss</h2>
-                    <p>Vi er her for å hjelpe deg med å skape noe ekstraordinært.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">📧</div>
-                            <div>
-                                <h4>E-post</h4>
-                                <p>kontakt@divine.no</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">📱</div>
-                            <div>
-                                <h4>Telefon</h4>
-                                <p>+47 123 45 678</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">📍</div>
-                            <div>
-                                <h4>Adresse</h4>
-                                <p>Oslo, Norge</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Navn" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="E-post" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Melding" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Melding</button>
-                </form>
-            </div>
-        </div>
-    </section>
+<div style="position:absolute;top:1200px;right:200px;">
+<p style="font-size:60px;">BIG</p>
+<p style="font-size:8px;position:absolute;left:100px;top:50px;">small</p>
+</div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>✨ DIVINE</h3>
-                    <p>Skapende det beste nettstedet i universet, en pixel om gangen.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Hurtiglenker</h4>
-                    <ul>
-                        <li><a href="#home">Hjem</a></li>
-                        <li><a href="#features">Funksjoner</a></li>
-                        <li><a href="#gallery">Galleri</a></li>
-                        <li><a href="#contact">Kontakt</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Følg Oss</h4>
-                    <div class="social-links">
-                        <a href="#" class="social-link">Facebook</a>
-                        <a href="#" class="social-link">Twitter</a>
-                        <a href="#" class="social-link">Instagram</a>
-                        <a href="#" class="social-link">LinkedIn</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 DIVINE. Alle rettigheter reservert.</p>
-            </div>
-        </div>
-    </footer>
+<div id="footer" style="position:absolute;top:1500px;left:500px;">
+<p>Copyright 2024</p>
+<p style="font-size:30px;">BYE</p>
+</div>
+
+<div style="position:absolute;top:400px;left:600px;background:yellow;padding:20px;">
+<p>Ekstra tekst her!</p>
+</div>
+
+<div style="position:absolute;top:800px;right:50px;background:cyan;padding:15px;">
+<h4>Mer tekst</h4>
+</div>
+
+<div style="position:absolute;top:1100px;left:800px;background:orange;padding:25px;">
+<p>Enda mer!</p>
+</div>
+
+<style>
+h1 { color: blue; }
+.content { margin: 10px; }
+p { color: green !important; }
+div { border: 5px solid red; }
+</style>
+
 </body>
 </html>
